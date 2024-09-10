@@ -61,7 +61,7 @@ el puntaje que obtuvo cada uno hasta el momento.
   
 ### Documentación de la API con Swagger
 Swagger está integrado para generar documentación interactiva de la API. Una vez que la aplicación esté en ejecución, puedes acceder a la documentación visitando:
-    ```http://localhost:8080/swagger-ui/index.html```
+    http://localhost:8080/swagger-ui/index.html
 
 ## API Endpoints
 - POST `/api/reconocimientos/recomendar`
