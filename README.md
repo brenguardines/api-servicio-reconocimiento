@@ -64,7 +64,7 @@ Swagger está integrado para generar documentación interactiva de la API. Una v
     http://localhost:8080/swagger-ui/index.html
 
 ## API Endpoints
-- POST `/api/reconocimientos/recomendar`
+- POST `/api/reconocimientos/recomendar`: Devuelve una lista de colaboradores recomendados
     - Requiere un objeto JSON en el cuerpo de la solicitud con los siguientes parámetros:
   
    ```   
@@ -75,3 +75,17 @@ Swagger está integrado para generar documentación interactiva de la API. Una v
         "maxColaboradores": Numero de Colaboradores
     }
     ```
+- POST `/api/colaboradores/crear`: Crea un colaborador
+    - Requiere un objeto JSON en el cuerpo de la solicitud con los siguientes parámetros:
+
+   ```   
+    {
+        "nombre": "Nombre",
+        "apellido": "Apellido",
+        "puntos": Numero de puntos,
+        "viandasDonadas": Numero de Viandas
+    }
+    ```
+
+- GET `/api/colaboradores/{id}`: Devuelve un colaborador
+- GET `/api/colaboradores`: Devuelve todos los colaboradores

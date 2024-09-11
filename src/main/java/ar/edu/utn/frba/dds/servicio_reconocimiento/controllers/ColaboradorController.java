@@ -21,7 +21,7 @@ public class ColaboradorController {
   @Autowired
   private ColaboradorService colaboradorService;
 
-  @GetMapping("/todos")
+  @GetMapping
   public List<Colaborador> obtenerTodosLosColaboradores() {
     return colaboradorService.obtenerTodosLosColaboradores();
   }
